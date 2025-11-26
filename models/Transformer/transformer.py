@@ -12,7 +12,7 @@ class Transformer(nn.Module):
     """
     Construct a model from hyperparameters.
     """
-    def __init__(self, c_enc, c_dec, N=2, d_model=128, d_ff=2048, h=4, dropout=0.1):
+    def __init__(self, c_enc, c_dec, N=2, d_model=128, d_ff=512, h=4, dropout=0.2):
         super(Transformer, self).__init__()
         c = copy.deepcopy
         # 定义注意力机制
